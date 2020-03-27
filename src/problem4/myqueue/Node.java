@@ -15,4 +15,20 @@ public class Node {
         treeNode = treeNode1;
         next = null;
     }
+
+    public TreeNode getTreeNode() {
+        return treeNode;
+    }
+
+    public void setTreeNode(TreeNode treeNode) {
+        this.treeNode = treeNode;
+    }
+
+    public Node getNext() {
+        return next;
+    }
+
+    public void setNext(Node next) {
+        this.next = next;
+    }
 }
