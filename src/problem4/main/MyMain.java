@@ -27,5 +27,7 @@ public class MyMain {
         myQueue.print(myQueue);
         System.out.println("Enter value for find the Successor");
         Scanner scanner = new Scanner(System.in);
+        myQueue.printTheSuccessor(scanner.nextInt());
+
     }
 }
