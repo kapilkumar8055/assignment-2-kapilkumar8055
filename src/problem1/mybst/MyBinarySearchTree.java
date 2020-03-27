@@ -2,6 +2,7 @@ package problem1.mybst;
 
 import problem1.node.TreeNode;
 
+import java.util.LinkedList;
 import java.util.Queue;
 
 // to implement BinarySearchTree
@@ -29,5 +30,8 @@ public class MyBinarySearchTree {
     public void countNodesWithoutLeftChild(TreeNode root) {
         if (root == null)
             return;
+        Queue<TreeNode> queue1 = new LinkedList<TreeNode>();
+        queue1.add(root);
+        int count = 0
     }
 }
