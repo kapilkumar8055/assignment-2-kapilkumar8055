@@ -74,7 +74,6 @@ public class MyQueue {
         System.out.println("\b");
         queue.temp = queue.front;
     }
-
     public void printTheSuccessor(int data) {
         temp = front;
         while (temp.getTreeNode().getData() != data && temp != null) {
