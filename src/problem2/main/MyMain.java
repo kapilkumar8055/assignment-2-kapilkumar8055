@@ -25,5 +25,6 @@ public class MyMain {
         traverse.printInOrderTraversal(treeNode);
         System.out.println();
         traverse.printPostOrderTraversal(treeNode);
+
     }
 }
