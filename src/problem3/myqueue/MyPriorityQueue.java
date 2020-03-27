@@ -41,8 +41,9 @@ public class MyPriorityQueue {
             System.out.println("underflow");
         } else {
             Node temp = front;
+            System.out.println("Data    Priority");
             while (temp != null) {
-                System.out.println("Data " + temp.getData() + "Priority " + temp.getPriority());
+                System.out.println(temp.getData() + "        " + temp.getPriority());
                 temp = temp.getNext();
             }
         }
