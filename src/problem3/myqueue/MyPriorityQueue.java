@@ -22,6 +22,17 @@ public class MyPriorityQueue {
     }
 
     public void insert(int data, int priority) {
-    Node node = new Node(data, priority);
+        Node node = new Node(data, priority);
+        if (isEmpty() || node.getPriority() < front.getPriority()) {
+            node.setNext(front);
+            front = node;
+        } else {
+            Node temp = front;
+            while (temp.getNext() != null && temp.getNext().getPriority() <= node.getPriority()) {
+                temp = temp.getNext();
+            }
+            node.setNext(temp.getNext());
+            temp.setNext(node);
+        }
     }
 }
