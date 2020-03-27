@@ -25,4 +25,9 @@ public class MyBinarySearchTree {
             root.setLeft(insert(root.getLeft(), data));
         return root;
     }
+
+    public void countNodesWithoutLeftChild(TreeNode root) {
+        if (root == null)
+            return;
+    }
 }
