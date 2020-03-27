@@ -19,4 +19,5 @@ public class MyMain {
         myPriorityQueue.insert(400, 4);
         myPriorityQueue.display();
     }
+
 }
