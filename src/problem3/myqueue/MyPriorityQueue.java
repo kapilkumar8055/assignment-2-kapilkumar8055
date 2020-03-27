@@ -22,6 +22,6 @@ public class MyPriorityQueue {
     }
 
     public void insert(int data, int priority) {
-
+    Node node = new Node(data, priority);
     }
 }
