@@ -15,4 +15,8 @@ public class MyBinarySearchTree {
             inordertraversal(root.getRight());
         }
     }
+
+    public TreeNode insert(TreeNode root, int d) {
+
+    }
 }
