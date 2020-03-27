@@ -23,5 +23,6 @@ public class MyBinarySearchTree {
             root.setRight(insert(root.getRight(), data));
         else
             root.setLeft(insert(root.getLeft(), data));
+        return root;
     }
 }
