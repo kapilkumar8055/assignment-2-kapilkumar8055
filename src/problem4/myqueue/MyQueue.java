@@ -73,4 +73,17 @@ public class MyQueue {
         }
         queue.temp = queue.front;
     }
+
+    public void printTheSuccessor(int data) {
+        temp = front;
+        while (temp.getTreeNode().getData() != data && temp != null) {
+            temp = temp.getNext();
+        }
+        try {
+            assert temp != null;
+            System.out.println(temp.getNext().getTreeNode().getData());
+        } catch (Exception exception) {
+            System.out.println("Pre-order Successor is not found");
+        }
+    }
 }
