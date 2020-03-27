@@ -44,6 +44,7 @@ public class MyBinarySearchTree {
             if (temp.getRight() != null)
                 queue1.add(temp.getRight());
         }
+        System.out.println("Number of Nodes without left child: " + count);
     }
 }
 
