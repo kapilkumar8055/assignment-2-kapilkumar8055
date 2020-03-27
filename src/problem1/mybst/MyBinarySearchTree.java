@@ -17,6 +17,7 @@ public class MyBinarySearchTree {
     }
 
     public TreeNode insert(TreeNode root, int d) {
-
+        if (root == null)
+            return new TreeNode(d);
     }
 }
