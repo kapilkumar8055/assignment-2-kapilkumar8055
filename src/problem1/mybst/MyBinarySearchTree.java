@@ -9,14 +9,6 @@ import java.util.Queue;
 public class MyBinarySearchTree {
     static Queue<TreeNode> queue;
 
-    public void inordertraversal(TreeNode root) {
-        if (root.getLeft() != null) {
-            inordertraversal(root.getLeft());
-            System.out.println(root.getData());
-            inordertraversal(root.getRight());
-        }
-    }
-
     public TreeNode insert(TreeNode root, int data) {
         if (root == null)
             return new TreeNode(data);
