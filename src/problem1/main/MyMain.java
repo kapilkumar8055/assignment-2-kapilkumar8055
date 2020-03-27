@@ -20,5 +20,7 @@ public class MyMain {
         myBinarySearchTree.insert(root, 90);
         myBinarySearchTree.insert(root, 12);
         myBinarySearchTree.countNodesWithoutLeftChild(root);
+        myBinarySearchTree.printLeftTree(root);
+
     }
 }
