@@ -10,4 +10,12 @@ public class Traverse {
         printPostOrderTraversal(node.getRight());
         System.out.print(node.getData() + " ");
     }
+
+    void printInOrderTraversal(TreeNode node) {
+        if (node == null)
+            return;
+        printInOrderTraversal(node.getLeft());
+        System.out.print(node.getData() + " ");
+        printInOrderTraversal(node.getRight());
+    }
 }
