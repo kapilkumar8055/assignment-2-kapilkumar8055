@@ -65,4 +65,12 @@ public class MyQueue {
             temp = front;
         }
     }
+
+    public void print(MyQueue queue) {
+        while (queue.temp != null) {
+            System.out.print(queue.temp.getTreeNode().getData() + ",");
+            queue.temp = queue.temp.getNext();
+        }
+        queue.temp = queue.front;
+    }
 }
