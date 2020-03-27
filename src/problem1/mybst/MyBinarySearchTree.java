@@ -16,8 +16,10 @@ public class MyBinarySearchTree {
         }
     }
 
-    public TreeNode insert(TreeNode root, int d) {
+    public TreeNode insert(TreeNode root, int data) {
         if (root == null)
-            return new TreeNode(d);
+            return new TreeNode(data);
+        else if (data > root.getData())
+            root.setRight(insert(root.getRight(), data));
     }
 }
