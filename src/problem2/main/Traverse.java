@@ -3,11 +3,11 @@ package problem2.main;
 import problem1.node.TreeNode;
 
 public class Traverse {
-    void printPostorder(TreeNode node) {
+    void printPostOrderTraversal(TreeNode node) {
         if (node == null)
             return;
-        printPostorder(node.getLeft());
-        printPostorder(node.getRight());
+        printPostOrderTraversal(node.getLeft());
+        printPostOrderTraversal(node.getRight());
         System.out.print(node.getData() + " ");
     }
 }
