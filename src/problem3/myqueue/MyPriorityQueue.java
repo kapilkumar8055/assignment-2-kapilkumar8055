@@ -42,7 +42,7 @@ public class MyPriorityQueue {
         } else {
             Node temp = front;
             while (temp != null) {
-                System.out.println(temp.getData() + "-" + temp.getPriority());
+                System.out.println("Data " + temp.getData() + "Priority " + temp.getPriority());
                 temp = temp.getNext();
             }
         }

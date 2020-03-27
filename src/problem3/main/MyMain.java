@@ -13,6 +13,10 @@ import problem3.myqueue.MyPriorityQueue;
 public class MyMain {
     public static void main(String[] args) {
         MyPriorityQueue myPriorityQueue = new MyPriorityQueue();
-
+        myPriorityQueue.insert(100, 1);
+        myPriorityQueue.insert(200, 3);
+        myPriorityQueue.insert(500, 6);
+        myPriorityQueue.insert(400, 4);
+        myPriorityQueue.display();
     }
 }
