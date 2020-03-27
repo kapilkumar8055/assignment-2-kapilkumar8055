@@ -4,6 +4,8 @@ import problem1.mybst.MyBinarySearchTree;
 import problem1.node.TreeNode;
 import problem4.myqueue.MyQueue;
 
+import java.util.Scanner;
+
 // executable class
 // use problem1.mybst.MyBinarySearchTree class for creating binary tree
 public class MyMain {
@@ -21,5 +23,9 @@ public class MyMain {
         myBinarySearchTree.insert(root, 7);
         myBinarySearchTree.insert(root, 3);
         myBinarySearchTree.insert(root, 1);
+        System.out.println("Print the Queue");
+        myQueue.print(myQueue);
+        System.out.println("Enter value for find the Successor");
+        Scanner scanner = new Scanner(System.in);
     }
 }
