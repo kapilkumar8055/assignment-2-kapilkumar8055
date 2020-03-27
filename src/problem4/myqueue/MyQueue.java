@@ -41,4 +41,14 @@ public class MyQueue {
     public void setSize(int size) {
         this.size = size;
     }
+
+    public int getSize(MyQueue q) {
+        q.temp = q.front;
+        while (q.temp != null) {
+            ++size;
+            q.temp = q.temp.getNext();
+        }
+        q.temp = q.front;
+        return size;
+    }
 }
