@@ -4,6 +4,8 @@ import problem5.circularqueue.MyCircularQueue;
 import problem5.node.Node;
 import problem5.student.Student;
 
+import java.util.Scanner;
+
 //executable class
 public class MyMain {
     public static void main(String[] args) {
@@ -14,5 +16,9 @@ public class MyMain {
             myCircularQueue.enqueue(node);
         }
         myCircularQueue.printQueue();
+        System.out.println("Enter student name for removing");
+        Scanner scanner = new Scanner(System.in);
+        myCircularQueue.remove(scanner.next());
+
     }
 }
