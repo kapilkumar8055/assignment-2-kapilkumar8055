@@ -23,4 +23,10 @@ public class MyCircularQueue {
     public void setTemp(Node temp) {
         this.temp = temp;
     }
+
+    public MyCircularQueue() {
+        temp = null;
+        end = null;
+        front = null;
+    }
 }
