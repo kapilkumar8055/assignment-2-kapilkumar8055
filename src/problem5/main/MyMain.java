@@ -19,6 +19,7 @@ public class MyMain {
         System.out.println("Enter student name for removing");
         Scanner scanner = new Scanner(System.in);
         myCircularQueue.remove(scanner.next());
-
+        myCircularQueue.printQueue();
+        myCircularQueue.processing(scanner.next());
     }
 }
