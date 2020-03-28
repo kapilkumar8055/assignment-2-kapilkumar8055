@@ -41,4 +41,14 @@ public class Student {
     public void setAppearingCount(int appearingCount) {
         this.appearingCount = appearingCount;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentName='" + studentName + '\'' +
+                ", studentRollNo=" + studentRollNo +
+                ", backlog=" + backlog +
+                ", appearingCount=" + appearingCount +
+                '}';
+    }
 }
