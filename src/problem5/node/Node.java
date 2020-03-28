@@ -6,4 +6,9 @@ import problem5.student.Student;
 public class Node {
     private Student student;
     private Node next;
+
+    public Node(Student student) {
+        this.student = student;
+        this.next = null;
+    }
 }
