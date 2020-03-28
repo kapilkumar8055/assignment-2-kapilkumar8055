@@ -11,7 +11,6 @@ public class MyCircularQueue {
     public Node getFront() {
         return front;
     }
-
     public void setFront(Node front) {
         this.front = front;
     }
