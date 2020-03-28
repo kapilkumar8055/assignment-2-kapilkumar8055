@@ -51,4 +51,16 @@ public class Student {
                 ", appearingCount=" + appearingCount +
                 '}';
     }
+
+    public Student() {
+        scanner = new Scanner(System.in);
+        System.out.print("Student Name :");
+        this.studentName = scanner.next();
+        System.out.print("Roll.no : ");
+        this.studentRollNo = scanner.nextInt();
+        System.out.print("Backlog Count : ");
+        this.backlog = scanner.nextInt();
+        System.out.print("appering_count");
+        this.appearingCount = scanner.nextInt();
+    }
 }
