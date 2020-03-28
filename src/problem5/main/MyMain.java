@@ -13,5 +13,6 @@ public class MyMain {
             node = new Node(new Student());
             myCircularQueue.enqueue(node);
         }
+        myCircularQueue.printQueue();
     }
 }
