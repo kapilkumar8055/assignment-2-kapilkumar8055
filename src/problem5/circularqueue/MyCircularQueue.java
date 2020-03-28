@@ -41,7 +41,6 @@ public class MyCircularQueue {
         } catch (Exception ignored) {
         }
     }
-
     public void enqueue(Node node) {
         if (front == null) {
             temp = front = node;
@@ -56,7 +55,6 @@ public class MyCircularQueue {
         node.setNext(temp.getNext());
         temp.setNext(node);
     }
-
     public void processing(String name) {
         temp = front;
         if (temp.getStudent().getStudentName().equals(name)) {
