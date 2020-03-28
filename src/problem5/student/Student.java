@@ -7,7 +7,7 @@ public class Student {
     private String studentName;
     private int studentRollNo;
     private int backlog;
-    private int apperingCount;
+    private int appearingCount;
     private Scanner scanner;
 
 }
