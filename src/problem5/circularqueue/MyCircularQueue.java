@@ -41,4 +41,19 @@ public class MyCircularQueue {
         } catch (Exception ignored) {
         }
     }
+
+    public void enqueue(Node node) {
+        if (front == null) {
+            temp = front = node;
+            return;
+        }
+        if (temp.getNext() == null) {
+            temp.setNext(node);
+            node.setNext(temp);
+            end = node;
+            return;
+        }
+        node.setNext(temp.getNext());
+        temp.setNext(node);
+    }
 }
