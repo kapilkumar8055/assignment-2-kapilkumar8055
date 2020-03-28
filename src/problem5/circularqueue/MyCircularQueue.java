@@ -29,4 +29,16 @@ public class MyCircularQueue {
         end = null;
         front = null;
     }
+
+    public void printQueue() {
+        temp = front;
+        try {
+            do {
+                System.out.println(temp.getStudent().toString());
+                temp = temp.getNext();
+            }
+            while (temp != front && temp != null);
+        } catch (Exception ignored) {
+        }
+    }
 }
